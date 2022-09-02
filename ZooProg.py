@@ -57,11 +57,10 @@ def print_all(my_zoo):
 
 def search_animals(my_zoo):
     animal_2_search = input("Animal's Name? ")
-    for animal_2_search in my_zoo: 
-        if str(animal_2_search) == my_zoo:
-            return animal_2_search
-    return "None"
-
+    for x in my_zoo: 
+        if x.name == animal_2_search:
+            print(x)
+            
 def main():
     my_zoo = []
     user_selection = menu()
